@@ -1,6 +1,6 @@
 const CharacterItem = (props) => {
-    console.log(props);
-    const { name, image, gender, species, status } = props.item;
+    const {item}=props;
+    const { name, image, gender, species, status } = item;
     return <>
         <div className='character-item'>
             <div>

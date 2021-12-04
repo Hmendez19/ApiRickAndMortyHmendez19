@@ -1,10 +1,10 @@
 :root {
     --color-titulo: #212529 !important;
     --bg-titulo: rgb(232, 235, 241);
-    --bg-dark:#212529 !important;
+    --bg-dark: #212529 !important;
 }
 
-body{
+body {
     background-color: var(--bg-dark);
 }
 
@@ -28,6 +28,7 @@ main {
     min-height: calc(-60px + 85vh);
 }
 
+
 .conatainer-search {
     background: url('../img/fondo.webp') 0% 0% no-repeat fixed;
     background-size: cover;
@@ -41,6 +42,13 @@ main {
     border-color: #0d6efd;
 }
 
+.icon-search {
+    position: absolute;
+    right: 10px;
+    top: 26px;
+    font-size: 1.8rem;
+    z-index: 10;
+}
 
 .character-list {
     display: flex;

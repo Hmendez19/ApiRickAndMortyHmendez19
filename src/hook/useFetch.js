@@ -11,10 +11,10 @@ const useFetch = () => {
     }, [characterName]);
 
 
-    const fetchData = async (name = '') => {
+    const fetchData = async (name) => {
         try {
             setIsLoader(true);
-            const response = await fetch(`${URL_API}`);
+            const response = await fetch(`${URL_API}?name=${name}`);
             if (!response.ok) {
                 setData([]);
             }

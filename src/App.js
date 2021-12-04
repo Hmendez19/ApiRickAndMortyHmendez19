@@ -1,14 +1,14 @@
 import Header from "./components/Header";
-import Search from "./components/Search";
 import Main from "./components/Main";
 import CharacterList from "./components/CharacterList";
+import Search from "./components/Search";
 function App() {
   return (
     <>
       <Header />
       <Main className="bg-dark">
-         <Search />
-         <CharacterList />
+        <Search />
+        <CharacterList />
       </Main>
     </>
   );
