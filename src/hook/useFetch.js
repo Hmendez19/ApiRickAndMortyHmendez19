@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
-import { URL_API } from "../config/config";
+import { URL_API,MENSAJE_ERROR } from "../config/config";
 
-const useFetch = (name = '') => {
+const useFetch = () => {
     const [data, setData] = useState([]);
     const [isLoader, setIsLoader] = useState(false);
+    const [characterName,setCharacterName]=useState('');
 
     useEffect(() => {
-        fetchData(name);
-    }, [name]);
+        fetchData(characterName);
+    }, [characterName]);
 
 
     const fetchData = async (name = '') => {
@@ -20,14 +21,14 @@ const useFetch = (name = '') => {
             const { results } = await response.json();
             setData(results);
         } catch (error) {
-            alert("Ocurrió algo inesperado");
+            alert(MENSAJE_ERROR);
             console.log(error);
         } finally {
             setIsLoader(false);
         }
     };
 
-    return [data, isLoader];
+    return [data, isLoader,setCharacterName];
 }
 
 export default useFetch;

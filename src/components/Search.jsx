@@ -1,8 +1,4 @@
-import useFetch from "../hook/useFetch";
-
 const Search = () => {
-    const [data,isLoader]=useFetch();
-    console.log(data,isLoader);
     return <>
         <div className="container conatainer-search">
             <div className="input-group mb-3 pt-4">

@@ -1,9 +1,14 @@
-:root{
+:root {
     --color-titulo: #212529 !important;
-    --bg-titulo:rgb(232, 235, 241);
+    --bg-titulo: rgb(232, 235, 241);
+    --bg-dark:#212529 !important;
 }
 
-.titulo{
+body{
+    background-color: var(--bg-dark);
+}
+
+.titulo {
     margin: 0px;
     color: var(--color-titulo);
     border: medium none;
@@ -12,26 +17,57 @@
     font-size: 5.625rem;
 }
 
-header{
-    background: url('https://lh3.googleusercontent.com/proxy/_7xdZWrNLZENs-PTmqD4eCfStU2bPyPgMMSNJQnBG_7QIRI6icCHDjWfhZRzBBVkpPDOKxjUrNq-xyjPVAdng6iX4OGOpWNNYjvDTfCe9bmt08MY37QAgr_VPNpsGJVJTwViIGBQKXWSXe-ZpN86fv8Y23wJxF2w486u2YCgtcElBVN1LpmGB729yBoWDInmqw38sPlUFJ2AjoKS0-EIzr2qL8kgZ7eFDSKH')  0% 110% no-repeat fixed; 
+header {
+    background: url('../img/fondo.webp') 0% 0% no-repeat fixed;
     background-size: cover;
     padding-bottom: 5rem;
 }
 
-main{
+main {
     background: rgb(36, 40, 47) none repeat scroll 0% 0%;
     min-height: calc(-60px + 85vh);
 }
 
-.conatainer-search{
-    background: url('https://lh3.googleusercontent.com/proxy/_7xdZWrNLZENs-PTmqD4eCfStU2bPyPgMMSNJQnBG_7QIRI6icCHDjWfhZRzBBVkpPDOKxjUrNq-xyjPVAdng6iX4OGOpWNNYjvDTfCe9bmt08MY37QAgr_VPNpsGJVJTwViIGBQKXWSXe-ZpN86fv8Y23wJxF2w486u2YCgtcElBVN1LpmGB729yBoWDInmqw38sPlUFJ2AjoKS0-EIzr2qL8kgZ7eFDSKH') 0% 110% no-repeat fixed;
-background-size: cover;
+.conatainer-search {
+    background: url('../img/fondo.webp') 0% 0% no-repeat fixed;
+    background-size: cover;
     padding-bottom: 1rem;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
-.conatainer-search input{
+.conatainer-search input {
     height: 3rem;
     border-color: #0d6efd;
+}
+
+
+.character-list {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-flow: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.character-item {
+    width: 25vw;
+    display: flex;
+    background: rgb(36, 67, 59);
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 11px;
+    padding: 20px;
+}
+
+
+.character-item img {
+    width: 13vw;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    border: 1px solid #2f6006;
 }
