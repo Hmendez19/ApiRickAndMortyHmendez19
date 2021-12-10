@@ -82,9 +82,10 @@ main {
 
 
 
-@media(min-width:617px){
+
+@media(min-width:1093px){
     .character-item {
-        width: 90%;
+        width: 40%;
     }
 }
 
@@ -94,9 +95,8 @@ main {
     }
 }
 
-
-@media(min-width:1093px){
+@media(min-width:617px){
     .character-item {
-        width: 40%;
+        width: 90%;
     }
 }
