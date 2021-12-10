@@ -60,7 +60,7 @@ main {
 }
 
 .character-item {
-    width: 25vw;
+    width: 196px;
     display: flex;
     background: rgb(36, 67, 59);
     justify-content: space-around;
@@ -78,4 +78,28 @@ main {
     border-radius: 10px;
     margin-right: 0.5rem;
     border: 1px solid #2f6006;
+}
+
+
+@media(min-width:1093px){
+    .character-item {
+        width: 40%;
+    }
+}
+
+
+@media(min-width:683px){
+    .character-item {
+        width: 57%;
+    }
+}
+
+@media(min-width:617px){
+
+    .character-list {
+        flex-direction: column;
+    }
+    .character-item {
+        width: 90%;
+    }
 }
