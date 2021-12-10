@@ -81,18 +81,6 @@ main {
 }
 
 
-@media(min-width:1093px){
-    .character-item {
-        width: 40%;
-    }
-}
-
-
-@media(min-width:683px){
-    .character-item {
-        width: 57%;
-    }
-}
 
 @media(min-width:617px){
 
@@ -101,5 +89,18 @@ main {
     }
     .character-item {
         width: 90%;
+    }
+}
+
+@media(min-width:683px){
+    .character-item {
+        width: 57%;
+    }
+}
+
+
+@media(min-width:1093px){
+    .character-item {
+        width: 40%;
     }
 }
