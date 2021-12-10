@@ -83,10 +83,6 @@ main {
 
 
 @media(min-width:617px){
-
-    .character-list {
-        flex-direction: column;
-    }
     .character-item {
         width: 90%;
     }
